@@ -24,15 +24,15 @@
     </parent>
 
     <properties>
-        <spring.version>4.3.13.RELEASE</spring.version>
+
     </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-aop</artifactId>
-                <version>${spring.version}</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-aop</artifactId>
+                <version>1.5.4.RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
