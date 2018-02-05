@@ -12,6 +12,7 @@
     <modules>
         <module>annotational</module>
         <module>declaration</module>
+        <module>proxy</module>
     </modules>
 
     <parent>
