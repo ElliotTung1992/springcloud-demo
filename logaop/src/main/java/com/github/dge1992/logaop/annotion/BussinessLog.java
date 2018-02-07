@@ -1,5 +1,6 @@
 package com.github.dge1992.logaop.annotion;
 
+
 import java.lang.annotation.*;
 
 /**
@@ -30,14 +31,5 @@ public @interface BussinessLog {
      * @return
      */
     String value() default "";
-
-    /**
-     * 被修改实体的唯一标识
-     * @return
-     */
-    String key() default "id";
-
-
-
 
 }
