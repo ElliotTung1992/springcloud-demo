@@ -69,6 +69,8 @@
         <module>provider-server</module>
         <module>ribbon-server</module>
         <module>feign-server</module>
+        <module>config-server</module>
+        <module>config-client</module>
     </modules>
 
 </project>
