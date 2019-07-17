@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/aop.iml" filepath="$PROJECT_DIR$/aop.iml" />
-      <module fileurl="file://$PROJECT_DIR$/annotational/dynamic-data-source-demo.iml" filepath="$PROJECT_DIR$/annotational/dynamic-data-source-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/logaop/logaop.iml" filepath="$PROJECT_DIR$/logaop/logaop.iml" />
-      <module fileurl="file://$PROJECT_DIR$/proxy/proxy.iml" filepath="$PROJECT_DIR$/proxy/proxy.iml" />
-      <module fileurl="file://$PROJECT_DIR$/declaration/ssm.iml" filepath="$PROJECT_DIR$/declaration/ssm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feign-server/feign-server.iml" filepath="$PROJECT_DIR$/feign-server/feign-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/provider-server/provider-server.iml" filepath="$PROJECT_DIR$/provider-server/provider-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/provider/provider-server.iml" filepath="$PROJECT_DIR$/provider/provider-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ribbon-server/ribbon-server.iml" filepath="$PROJECT_DIR$/ribbon-server/ribbon-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-demo.iml" filepath="$PROJECT_DIR$/springcloud-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul-server/zuul-server.iml" filepath="$PROJECT_DIR$/zuul-server/zuul-server.iml" />
     </modules>
   </component>
 </project>
