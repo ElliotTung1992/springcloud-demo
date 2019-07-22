@@ -10,3 +10,12 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:9761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
