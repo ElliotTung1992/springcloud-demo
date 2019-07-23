@@ -12,6 +12,6 @@ public class HelloServiceHystrix implements HelloService{
 
     @Override
     public String hello(String name) {
-        return "服务挂了";
+        return "feign-server服务的hello接口挂了!!!";
     }
 }

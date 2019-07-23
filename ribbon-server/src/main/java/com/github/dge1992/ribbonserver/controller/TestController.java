@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date 2019/7/16
  **/
 @RestController
-public class HelloController {
+public class TestController {
 
     @Autowired
     HelloService helloService;
@@ -20,5 +20,10 @@ public class HelloController {
     @GetMapping(value = "/hi")
     public String hi(@RequestParam String name) {
         return helloService.hiService( name );
+    }
+
+    @GetMapping(value = "/zuul")
+    public String zuul() {
+        return "我是ribbon-server的zuul";
     }
 }

@@ -16,6 +16,9 @@
     <description>父工程-统一依赖管理</description>
 
     <properties>
+        <!-- dev是开发配置-->
+        <!-- git是git配置-->
+        <profile.env>dev</profile.env>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>

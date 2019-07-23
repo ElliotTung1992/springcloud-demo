@@ -17,8 +17,13 @@ public class HelloController {
     @Autowired
     HelloService helloService;
 
-    @GetMapping(value = "/hi")
-    public String sayHi(@RequestParam String name) {
-        return helloService.hello( name );
+    @GetMapping(value = "/hello")
+    public String hello(@RequestParam String name) {
+        return helloService.hello(name);
+    }
+
+    @GetMapping(value = "/zuul")
+    public String zuul() {
+        return "我是feign-server的zuul";
     }
 }

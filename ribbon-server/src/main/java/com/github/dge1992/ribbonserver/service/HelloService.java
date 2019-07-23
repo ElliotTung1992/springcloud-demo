@@ -22,6 +22,6 @@ public class HelloService {
     }
 
     public String hiError(String name) {
-        return "hi,"+name+",sorry,error!";
+        return "ribbon-server服务的hiService接口挂了!!!";
     }
 }
