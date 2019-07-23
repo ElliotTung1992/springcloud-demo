@@ -1,0 +1,17 @@
+
+server:
+  port: 9765
+
+spring:
+  application:
+    name: feign-server
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9761/eureka/
+
+# 打开feign中的hystrix，默认是关闭的
+feign:
+  hystrix:
+    enabled: true
