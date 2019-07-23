@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableCircuitBreaker
 public class ProviderApplication {
 
+    //http://localhost:9763/actuator/hystrix.stream
     public static void main(String[] args) {
         SpringApplication.run(ProviderApplication.class, args);
     }
