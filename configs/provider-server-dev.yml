@@ -1,6 +1,6 @@
 
 server:
-  port: 9762
+  port: 9763
 
 eureka:
   client:
@@ -36,4 +36,4 @@ management:
 
 
 project:
-  name: fnn
+  name: wangqi
