@@ -17,11 +17,14 @@ public class TestController {
     @Value("${server.port}")
     private Integer port;
 
+    @Value("${project.name}")
+    private String projectName;
+
     @HystrixCommand(fallbackMethod = "hiError")
     @GetMapping("/hi")
     public String hi(@RequestParam(value = "name", defaultValue = "小眼睛带鱼") String name) {
-        int i = 1/0;
-        return "hi I am " + name + " my port is " + port;
+//        int i = 1/0;
+        return "hi I am " + name + " my port is " + port + "/" + projectName;
     }
 
     public String hiError(String name) {
