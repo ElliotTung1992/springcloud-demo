@@ -32,3 +32,8 @@ management:
       cors:
         allowed-origins: "*"
         allowed-methods: "*"
+
+
+
+project:
+  name: wangqi
