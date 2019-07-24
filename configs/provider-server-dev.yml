@@ -1,6 +1,6 @@
 
 server:
-  port: 9763
+  port: 9762
 
 eureka:
   client:
@@ -12,17 +12,6 @@ spring:
     base-url: http://localhost:9411
   application:
     name: service-hi
-  rabbitmq:
-    host: localhost
-    port: 5672
-    virtual-host: testhost
-    username: admin
-    password: 123123
-    cloud:
-      bus:
-        enabled: true
-        trace:
-          enabled: true
 
 management:
   endpoints:
@@ -36,4 +25,4 @@ management:
 
 
 project:
-  name: wangqi
+  name: fnn
