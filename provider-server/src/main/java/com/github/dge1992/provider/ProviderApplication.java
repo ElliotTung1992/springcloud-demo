@@ -13,7 +13,6 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 @EnableHystrix
 @EnableHystrixDashboard
 @EnableCircuitBreaker
-@RefreshScope
 public class ProviderApplication {
 
     //http://localhost:9763/actuator/hystrix.stream
