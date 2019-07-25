@@ -21,7 +21,7 @@ management:
         allowed-methods: "*"
 
 turbine:
-  app-config: service-hi
+  app-config: service-hi, ribbon-server, feign-server
   aggregator:
     clusterConfig: default
   clusterNameExpression: new String("default")
