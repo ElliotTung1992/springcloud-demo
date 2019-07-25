@@ -1,22 +1,17 @@
 
 server:
-  port: 9765
-
-spring:
-  zipkin:
-    base-url: http://localhost:9411
-  application:
-    name: feign-server
+  port: 9762
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:9761/eureka/
 
-# 打开feign中的hystrix，默认是关闭的
-feign:
-  hystrix:
-    enabled: true
+spring:
+  zipkin:
+    base-url: http://localhost:9411
+  application:
+    name: service-hi
 
 management:
   endpoints:

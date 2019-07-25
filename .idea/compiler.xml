@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="config-client" />
+        <module name="config-server" />
         <module name="eureka-server" />
         <module name="feign-server" />
         <module name="provider-server" />
@@ -14,11 +16,16 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="common" target="1.8" />
+      <module name="config-client" target="1.8" />
+      <module name="config-server" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="feign-server" target="1.8" />
       <module name="provider-server" target="1.8" />
       <module name="ribbon-server" target="1.8" />
       <module name="springcloud-demo" target="1.8" />
+      <module name="turbine-server" target="1.8" />
+      <module name="zipkin-server" target="1.8" />
       <module name="zuul-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>

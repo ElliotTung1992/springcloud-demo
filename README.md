@@ -14,7 +14,6 @@ zuul-server: 9769
 config-server: 8888
 <br>
 如果需要更改成别的端口配置文件需要改为bootstrap.properties
-
 #### 配置中心整合消息总线
 发送post请求：http://localhost:port/actuator/bus-refresh更新配置文件
 <br>
