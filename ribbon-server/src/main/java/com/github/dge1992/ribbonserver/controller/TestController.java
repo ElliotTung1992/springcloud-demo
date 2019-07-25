@@ -3,6 +3,7 @@ package com.github.dge1992.ribbonserver.controller;
 import com.github.dge1992.ribbonserver.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,13 +18,18 @@ public class TestController {
     @Autowired
     HelloService helloService;
 
-    @GetMapping(value = "/hi")
-    public String hi(@RequestParam String name) {
-        return helloService.hiService( name );
+    @GetMapping(value = "/helloProvider")
+    public String helloProvider(@RequestParam String name) {
+        return helloService.helloProvider( name );
     }
 
     @GetMapping(value = "/zuul")
     public String zuul() {
         return "我是ribbon-server的zuul";
+    }
+
+    @RequestMapping("/hi")
+    public String hi(){
+        return "i am ribbon";
     }
 }
