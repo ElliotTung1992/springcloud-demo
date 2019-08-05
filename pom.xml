@@ -75,6 +75,8 @@
         <module>config-client</module>
         <module>zuul-server</module>
         <module>turbine-server</module>
+        <module>consul-consumer</module>
+        <module>consul-provider</module>
     </modules>
 
 </project>
