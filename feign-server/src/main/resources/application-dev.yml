@@ -10,8 +10,15 @@ spring:
 
 eureka:
   client:
+    security:
+      basic:
+        user: admin
+        password: admin
     serviceUrl:
-      defaultZone: http://localhost:9761/eureka/
+      # defaultZone: http://localhost:9761/eureka/ # 常规配置
+      # defaultZone: http://localhost:9761/eureka/,http://localhost:9760/eureka/ # 在线扩容配置
+      defaultZone: http://${eureka.client.security.basic.user}:${eureka.client.security.basic.password}@localhost:9761/eureka/ # Http basic配置
+    registry-fetch-interval-seconds: 5 # 适当提高client拉取Server注册信息的频率，默认30秒
 
 # 打开feign中的hystrix，默认是关闭的
 feign:

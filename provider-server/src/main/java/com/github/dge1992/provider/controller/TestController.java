@@ -26,7 +26,7 @@ public class TestController {
     @HystrixCommand(fallbackMethod = "hiError")
     @GetMapping("/hi")
     public String hi(@RequestParam(value = "name", defaultValue = "小眼睛带鱼") String name) {
-        int i = 10/0;
+        //int i = 10/0;
         return "hi I am provider-server my name is " + name + " my port is " + port;
     }
 

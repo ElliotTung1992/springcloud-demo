@@ -1,8 +1,13 @@
 
 eureka:
   client:
+    security:
+      basic:
+        user: admin
+        password: admin
     serviceUrl:
-      defaultZone: http://localhost:9761/eureka/
+      # defaultZone: http://localhost:9761/eureka/
+      defaultZone: http://${eureka.client.security.basic.user}:${eureka.client.security.basic.password}@localhost:9761/eureka/ # Http basic配置
 
 server:
   port: 9769

@@ -5,12 +5,23 @@ server:
 eureka:
   instance:
     hostname: localhost
+  server:
+    eviction-interval-timer-in-ms: 5000 #服务下线了，eureka接口返回的信息还在，调整EvictionTask的调度评率，默认60秒
+    enable-self-preservation: false #服务下线了，eureka接口返回的信息还在，关闭自我保护机制
+    use-read-only-response-cache: false #服务下线了，eureka接口返回的信息还在，关闭readOnlyCacheMap
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ # 常规配置
+      # defaultZone: http://${eureka.instance.hostname}:8760/eureka/ # 在线扩容配置
 
 spring:
   application:
     name: eurka-server
+  security:
+    basic:
+      enabled: true
+    user:
+      name: admin
+      password: admin
