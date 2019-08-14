@@ -1,5 +1,6 @@
 package com.github.dge1992.feignserver.service;
 
+import com.github.dge1992.common.domain.User;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -9,4 +10,7 @@ public interface HelloService {
 
     @GetMapping(value = "/hi")
     String helloRibbon(@RequestParam(value = "name") String name);
+
+    @GetMapping("/testGetPojo")
+    Object testGetPojo(User user);
 }

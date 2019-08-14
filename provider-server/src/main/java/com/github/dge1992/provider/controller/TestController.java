@@ -1,5 +1,6 @@
 package com.github.dge1992.provider.controller;
 
+import com.github.dge1992.common.domain.User;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -26,6 +27,11 @@ public class TestController {
     @HystrixCommand(fallbackMethod = "hiError")
     @GetMapping("/hi")
     public String hi(@RequestParam(value = "name", defaultValue = "小眼睛带鱼") String name) {
+//        try {
+//            Thread.sleep(3000l);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         //int i = 10/0;
         return "hi I am provider-server my name is " + name + " my port is " + port;
     }
@@ -37,5 +43,10 @@ public class TestController {
 
     public String hiError(String name) {
         return "service-hi服务的hi接口挂了!!!";
+    }
+
+    @GetMapping("/testGetPojo")
+    public Object testGetPojo(User user){
+        return "调用成功！";
     }
 }

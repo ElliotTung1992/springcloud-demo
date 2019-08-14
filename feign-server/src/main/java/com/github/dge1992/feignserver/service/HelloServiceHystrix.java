@@ -1,5 +1,6 @@
 package com.github.dge1992.feignserver.service;
 
+import com.github.dge1992.common.domain.User;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,5 +14,10 @@ public class HelloServiceHystrix implements HelloService{
     @Override
     public String helloRibbon(String name) {
         return "feign-server服务的hello接口挂了!!!";
+    }
+
+    @Override
+    public Object testGetPojo(User user) {
+        return "";
     }
 }

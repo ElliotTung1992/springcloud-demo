@@ -1,6 +1,9 @@
 
 #### 服务列表：
 
+##### eureka2服务
+eureka-server: 9760
+
 ##### eureka服务
 eureka-server: 9761
 

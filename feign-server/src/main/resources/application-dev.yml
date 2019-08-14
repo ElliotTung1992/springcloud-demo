@@ -24,6 +24,26 @@ eureka:
 feign:
   hystrix:
     enabled: true
+  httpclient:
+    enabled: false # 禁用默认的http
+  okhttp:
+    enabled: true # 启用okhttp
+
+
+ribbon:
+  ReadTimeout: 2000 #请求处理的超时时间
+  ConnectTimeout: 2000 #请求连接的超时时间
+  MaxAutoRetries: 0 #对当前实例的重试次数
+  MaxAutoRetriesNextServer: 1 #切换实例的重试次数
+
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000 #设置熔断器超时时间
 
 management:
   endpoints:
@@ -33,3 +53,8 @@ management:
       cors:
         allowed-origins: "*"
         allowed-methods: "*"
+
+
+logging:
+  level:
+    com.github.dge1992.feignserver.service.*: debug
