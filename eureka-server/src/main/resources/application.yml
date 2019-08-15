@@ -19,7 +19,7 @@ eureka:
 spring:
   application:
     name: eurka-server
-  security:
+  security: # 开启Http Basic安全认证
     basic:
       enabled: true
     user:

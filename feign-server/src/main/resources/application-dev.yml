@@ -35,6 +35,15 @@ ribbon:
   ConnectTimeout: 2000 #请求连接的超时时间
   MaxAutoRetries: 0 #对当前实例的重试次数
   MaxAutoRetriesNextServer: 1 #切换实例的重试次数
+  eager-load: #开启饥饿加载
+    enabled: true
+    clients: service-hi
+
+# RandomRule随机策略
+# RoundRobinRule轮询策略
+service-hi:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
 
 hystrix:
   command:

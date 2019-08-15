@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 public class HelloServiceHystrix implements HelloService{
 
     @Override
-    public String helloRibbon(String name) {
+    public String hello(String name) {
         return "feign-server服务的hello接口挂了!!!";
     }
 

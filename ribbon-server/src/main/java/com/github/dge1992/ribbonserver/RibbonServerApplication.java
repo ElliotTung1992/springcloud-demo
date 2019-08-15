@@ -17,6 +17,8 @@ import org.springframework.web.client.RestTemplate;
 @EnableHystrix
 @EnableHystrixDashboard
 @EnableCircuitBreaker
+//@ComponentScan(excludeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, value = {AvoidScan.class})})
+//@RibbonClient(name = "service-hi", configuration = RibbonConfiguration.class)
 public class RibbonServerApplication {
 
     public static void main(String[] args) {

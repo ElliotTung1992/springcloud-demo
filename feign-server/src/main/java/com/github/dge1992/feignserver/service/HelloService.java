@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface HelloService {
 
     @GetMapping(value = "/hi")
-    String helloRibbon(@RequestParam(value = "name") String name);
+    String hello(@RequestParam(value = "name") String name);
 
     @GetMapping("/testGetPojo")
     Object testGetPojo(User user);
