@@ -29,7 +29,6 @@ feign:
   okhttp:
     enabled: true # 启用okhttp
 
-
 ribbon:
   ReadTimeout: 2000 #请求处理的超时时间
   ConnectTimeout: 2000 #请求连接的超时时间
@@ -45,14 +44,17 @@ service-hi:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
 
+# Ribbon的超时时间需要短于hystrix的超时时间
+
 hystrix:
   command:
     default:
       execution:
         timeout:
+          enabled: true #是否开启超时
         isolation:
           thread:
-            timeoutInMilliseconds: 3000 #设置熔断器超时时间
+            timeoutInMilliseconds: 3000 #设置熔断器超时时间,默认值1000
 
 management:
   endpoints:
