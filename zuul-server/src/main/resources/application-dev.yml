@@ -16,7 +16,9 @@ spring:
   application:
     name: zuul-server
 
+# 支持通配符配置
 zuul:
+  prefix: /zull
   routes:
     api-a:
       path: /ribbon/**
@@ -24,3 +26,6 @@ zuul:
     api-b:
       path: /feign/**
       serviceId: feign-server
+    api-c:
+      path: /provider/**
+      serviceId: service-hi
