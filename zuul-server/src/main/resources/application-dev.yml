@@ -1,4 +1,11 @@
 
+server:
+  port: 9769
+
+spring:
+  application:
+    name: zuul-server
+
 eureka:
   client:
     security:
@@ -9,16 +16,10 @@ eureka:
       # defaultZone: http://localhost:9761/eureka/
       defaultZone: http://${eureka.client.security.basic.user}:${eureka.client.security.basic.password}@localhost:9761/eureka/ # Http basic配置
 
-server:
-  port: 9769
-
-spring:
-  application:
-    name: zuul-server
-
 # 支持通配符配置
 zuul:
-  prefix: /zull
+  retryable: true #开启重试
+  # prefix: /zull
   routes:
     api-a:
       path: /ribbon/**
@@ -29,3 +30,20 @@ zuul:
     api-c:
       path: /provider/**
       serviceId: service-hi
+
+ribbon:
+  MaxAutoRetries: 1 #同一个服务重试的次数(除去首次)
+  MaxAutoRetriesNextServer: 1  #切换相同服务数量
+
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      access-token-uri: http://localhost:9800/auth/oauth/token #令牌端点
+      user-authorization-uri: http://localhost:9800/auth/oauth/authorize #授权端点
+      client-id: zuul_server #OAuth2客户端ID
+      client-secret: secret #OAuth2客户端密钥
+    resource:
+      jwt:
+        key-value: springcloud123 #使用对称加密方式，默认算法为HS256

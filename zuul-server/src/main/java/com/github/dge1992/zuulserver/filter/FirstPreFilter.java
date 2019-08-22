@@ -3,6 +3,7 @@ package com.github.dge1992.zuulserver.filter;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import lombok.extern.log4j.Log4j2;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
@@ -13,8 +14,8 @@ import javax.servlet.http.HttpServletRequest;
  * @Date 2019/7/16
  **/
 @Log4j2
-@Component
-public class MyFilter extends ZuulFilter {
+//@Component
+public class FirstPreFilter extends ZuulFilter {
 
     /**
      * @author dongganen
@@ -38,7 +39,7 @@ public class MyFilter extends ZuulFilter {
      */
     @Override
     public int filterOrder() {
-        return 0;
+        return 1;
     }
 
     /**
@@ -61,6 +62,19 @@ public class MyFilter extends ZuulFilter {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
         log.info(String.format("%s >>> %s", request.getMethod(), request.getRequestURL().toString()));
+
+        String name = request.getParameter("name");
+        //如果参数为空
+        if(StringUtils.isEmpty(name)){
+            //对该请求禁止路由，也就是禁止访问下游服务
+            ctx.setSendZuulResponse(false);
+            ctx.setResponseBody("{\"status\":500,\"message\":\"name参数为空！\"}");
+            //logic-is-success保存于上下文，作为同类型下游Filter的执行开关
+            ctx.set("logic-is-success", false);
+            //到这里此Filter逻辑结束
+            return null;
+        }
+        ctx.set("logic-is-success", true);
 //        Object accessToken = request.getParameter("token");
 //        if(accessToken == null) {
 //            log.warn("token is empty");
