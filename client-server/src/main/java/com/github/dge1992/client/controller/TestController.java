@@ -1,6 +1,6 @@
-package com.github.dge1992.ribbonserver.controller;
+package com.github.dge1992.client.controller;
 
-import com.github.dge1992.ribbonserver.service.HelloService;
+import com.github.dge1992.client.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

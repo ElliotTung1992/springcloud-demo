@@ -68,4 +68,4 @@ management:
 
 logging:
   level:
-    com.github.dge1992.feignserver.service.*: debug
+    com.github.dge1992.consumer.service.*: debug

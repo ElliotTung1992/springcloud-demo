@@ -1,4 +1,4 @@
-package com.github.dge1992.ribbonserver;
+package com.github.dge1992.client;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class RibbonServerApplicationTests {
+public class ClientServerApplicationTests {
 
     @Test
     public void contextLoads() {

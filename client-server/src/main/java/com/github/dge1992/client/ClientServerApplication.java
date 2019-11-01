@@ -1,4 +1,4 @@
-package com.github.dge1992.ribbonserver;
+package com.github.dge1992.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -19,10 +19,10 @@ import org.springframework.web.client.RestTemplate;
 @EnableCircuitBreaker
 //@ComponentScan(excludeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, value = {AvoidScan.class})})
 //@RibbonClient(name = "service-hi", configuration = RibbonConfiguration.class)
-public class RibbonServerApplication {
+public class ClientServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RibbonServerApplication.class, args);
+        SpringApplication.run(ClientServerApplication.class, args);
     }
 
     @Bean

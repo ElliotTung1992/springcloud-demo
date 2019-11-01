@@ -74,7 +74,7 @@
         <module>eureka-server</module>
         <module>eureka2-server</module>
         <module>provider-server</module>
-        <module>ribbon-server</module>
+        <module>client-server</module>
         <module>consumer-server</module>
         <module>config-server</module>
         <module>config-client</module>
