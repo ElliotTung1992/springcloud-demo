@@ -1,7 +1,7 @@
-package com.github.dge1992.feignserver.controller;
+package com.github.dge1992.consumer.controller;
 
 import com.github.dge1992.common.domain.User;
-import com.github.dge1992.feignserver.service.HelloService;
+import com.github.dge1992.consumer.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.eureka.EurekaClientConfigBean;
 import org.springframework.web.bind.annotation.*;

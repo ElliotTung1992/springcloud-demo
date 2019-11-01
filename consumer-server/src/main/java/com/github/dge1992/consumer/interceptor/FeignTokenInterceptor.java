@@ -1,4 +1,4 @@
-package com.github.dge1992.feignserver.interceptor;
+package com.github.dge1992.consumer.interceptor;
 
 import feign.RequestInterceptor;
 import feign.RequestTemplate;

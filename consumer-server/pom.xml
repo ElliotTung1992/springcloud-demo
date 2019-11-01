@@ -9,10 +9,10 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <groupId>com.github.dge1992</groupId>
-    <artifactId>feign-server</artifactId>
+    <artifactId>consumer-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>feign-server</name>
-    <description>Demo project for Spring Boot</description>
+    <name>consumer-server</name>
+    <description>消费者</description>
 
     <dependencies>
         <dependency>

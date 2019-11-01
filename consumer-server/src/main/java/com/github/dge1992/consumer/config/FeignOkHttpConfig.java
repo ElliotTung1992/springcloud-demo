@@ -1,4 +1,4 @@
-package com.github.dge1992.feignserver.config;
+package com.github.dge1992.consumer.config;
 
 import feign.Feign;
 import okhttp3.ConnectionPool;

@@ -1,4 +1,4 @@
-package com.github.dge1992.feignserver;
+package com.github.dge1992.consumer;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

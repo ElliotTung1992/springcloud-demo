@@ -1,4 +1,4 @@
-package com.github.dge1992.feignserver;
+package com.github.dge1992.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,10 +14,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients
 @EnableHystrix
 @EnableHystrixDashboard
-public class FeignServerApplication {
+public class ConsumerServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FeignServerApplication.class, args);
+        SpringApplication.run(ConsumerServerApplication.class, args);
     }
 
 }

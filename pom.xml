@@ -75,14 +75,13 @@
         <module>eureka2-server</module>
         <module>provider-server</module>
         <module>ribbon-server</module>
-        <module>feign-server</module>
+        <module>consumer-server</module>
         <module>config-server</module>
         <module>config-client</module>
         <module>zuul-server</module>
         <module>turbine-server</module>
         <module>consul-consumer</module>
         <module>consul-provider</module>
-        <module>auth-server</module>
     </modules>
 
 </project>

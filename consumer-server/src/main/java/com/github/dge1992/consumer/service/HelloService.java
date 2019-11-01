@@ -1,4 +1,4 @@
-package com.github.dge1992.feignserver.service;
+package com.github.dge1992.consumer.service;
 
 import com.github.dge1992.common.domain.User;
 import org.springframework.cloud.openfeign.FeignClient;
