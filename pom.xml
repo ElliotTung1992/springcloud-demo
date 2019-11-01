@@ -82,6 +82,7 @@
         <module>turbine-server</module>
         <module>consul-consumer</module>
         <module>consul-provider</module>
+        <module>zipkin-server</module>
     </modules>
 
 </project>
