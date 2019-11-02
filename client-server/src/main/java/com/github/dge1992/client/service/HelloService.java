@@ -18,10 +18,10 @@ public class HelloService {
 
     @HystrixCommand(fallbackMethod = "hiError")
     public String helloProvider(String name) {
-        return restTemplate.getForObject("http://SERVICE-HI/hi?name="+name,String.class);
+        return restTemplate.getForObject("http://consumer-server/hello?name="+name,String.class);
     }
 
     public String hiError(String name) {
-        return "ribbon-server服务的hiService接口挂了!!!";
+        return "client-server服务的hiService接口挂了!!!";
     }
 }
