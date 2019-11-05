@@ -1,27 +1,17 @@
 package com.github.dge1992.client.service;
 
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @Author 小眼睛带鱼
  * @Description
  * @Date 2019/7/16
  **/
-@Service
-public class HelloService {
+@FeignClient(value = "CONSUMER-SERVER")
+public interface HelloService {
 
-    @Autowired
-    RestTemplate restTemplate;
-
-    @HystrixCommand(fallbackMethod = "hiError")
-    public String helloProvider(String name) {
-        return restTemplate.getForObject("http://consumer-server/hello?name="+name,String.class);
-    }
-
-    public String hiError(String name) {
-        return "client-server服务的hiService接口挂了!!!";
-    }
+    @GetMapping(value = "/hello")
+    String helloProvider(@RequestParam("name") String name);
 }

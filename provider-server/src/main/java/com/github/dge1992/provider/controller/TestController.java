@@ -35,6 +35,7 @@ public class TestController {
 //            e.printStackTrace();
 //        }
         //int i = 10/0;
+        log.warn("哈哈");
         return "hi I am provider-server my name is " + name + " my port is " + port;
     }
 
