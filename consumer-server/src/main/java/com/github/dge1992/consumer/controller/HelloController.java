@@ -22,9 +22,24 @@ public class HelloController {
         return helloService.hello(name);
     }
 
-    @GetMapping(value = "/zuul")
-    public String zuul() {
-        return "我是feign-server的zuul";
+    @GetMapping(value = "/hello/test/gateway")
+    public String testGateway() {
+        return "我是/hello/test/gateway";
+    }
+
+    @GetMapping(value = "/gateway")
+    public String gateway() {
+        return "我是/gateway";
+    }
+
+    @GetMapping("/testPathVariable/{name}")
+    public String testPathVariable(@PathVariable("name") String name){
+        return "测试路径变量！！！" + name;
+    }
+
+    @GetMapping("/user")
+    public String user(@RequestParam("id")Integer id){
+        return String.valueOf(id);
     }
 
     @Autowired

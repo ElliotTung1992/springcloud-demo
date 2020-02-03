@@ -2,19 +2,19 @@
 #### 服务列表：
 
 ##### eureka2服务
-eureka-server: 9760
+eureka-server: 8760
 
 ##### eureka服务
-eureka-server: 9761
+eureka-server: 8761
 
 ##### 服务提供者
 service-hi: 9763/9762
 
-##### ribbon服务
-ribbon-server: 9764
+##### client服务
+client-server: 8764
 
-##### feign服务
-feign-server: 9765
+##### consumer服务
+consumer-server: 8765
 
 ##### 断路器聚合监控服务
 turbine-server: 9766
@@ -49,7 +49,7 @@ http://localhost:port/actuator/hystrix.stream
 管理界面:http://localhost:port/hystrix
 
 ##### consul服务端
-不需要自己构建，官网下载即可，默认端口8500<br>
+不需要自己构建，官网下载即可，默认端口8500
 consul服务 8500
 
 ##### consul消费者
@@ -60,6 +60,9 @@ consul-provider 9770
 
 ##### 认证服务
 auth-server 9800
+
+##### 网关服务
+gateway-server 9201
  
 
 

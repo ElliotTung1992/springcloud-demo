@@ -83,6 +83,7 @@
         <module>consul-consumer</module>
         <module>consul-provider</module>
         <module>zipkin-server</module>
+        <module>gateway-server</module>
     </modules>
 
 </project>
