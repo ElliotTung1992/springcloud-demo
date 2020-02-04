@@ -58,9 +58,6 @@ consul-consumer 9771
 ##### consul生产者
 consul-provider 9770
 
-##### 认证服务
-auth-server 9800
-
 ##### 网关服务
 gateway-server 9201
  
