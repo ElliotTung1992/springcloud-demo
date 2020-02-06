@@ -9,10 +9,10 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <groupId>com.github.dge1992</groupId>
-    <artifactId>common</artifactId>
+    <artifactId>common-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>common</name>
+    <name>common-api</name>
     <description>公共模块</description>
 
     <dependencies>
