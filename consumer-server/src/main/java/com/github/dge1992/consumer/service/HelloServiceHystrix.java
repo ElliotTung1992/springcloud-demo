@@ -20,4 +20,9 @@ public class HelloServiceHystrix implements HelloService{
     public Object testGetPojo(User user) {
         return "";
     }
+
+    @Override
+    public String testSessionFilter() {
+        return "";
+    }
 }

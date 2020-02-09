@@ -13,4 +13,7 @@ public interface HelloService {
 
     @GetMapping("/testGetPojo")
     Object testGetPojo(User user);
+
+    @GetMapping(value = "/testSessionFilter")
+    String testSessionFilter();
 }

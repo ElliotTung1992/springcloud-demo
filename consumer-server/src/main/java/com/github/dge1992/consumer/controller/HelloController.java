@@ -1,10 +1,17 @@
 package com.github.dge1992.consumer.controller;
 
+import brave.propagation.ExtraFieldPropagation;
 import com.github.dge1992.common.domain.User;
 import com.github.dge1992.consumer.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.eureka.EurekaClientConfigBean;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Future;
 
 /**
  * @Author 小眼睛带鱼
@@ -54,5 +61,48 @@ public class HelloController {
     @GetMapping("/testGetPojo")
     public Object testGetPojo(User user){
         return helloService.testGetPojo(user);
+    }
+
+    @Autowired
+    private RestTemplate restTemplate;
+
+    /**
+     * @author 董感恩
+     * @date 2020-02-09 15:59:24
+     * @desc 测试使用RestTemplate进行服务访问
+     **/
+    @GetMapping("/testRestTemplate")
+    public Object testRestTemplate(@RequestParam("name")String name){
+        String url = "http://localhost:9762/hi?name="+name;
+        return restTemplate.getForObject(url,String.class);
+    }
+
+    @Autowired
+    private ExecutorService executorService;
+
+    /**
+     *
+     * @author 董感恩
+     * @date 2020-02-09 16:03:05
+     * @desc executorService进行服务访问
+     **/
+    @GetMapping("/testExecutorService")
+    public Object testExecutorService(@RequestParam("name")String name) throws ExecutionException, InterruptedException {
+        Future future = executorService.submit(() -> {
+            String result = helloService.hello(name);
+            return result;
+        });
+        return future.get();
+    }
+
+    /**
+     * @author 董感恩
+     * @date 2020-02-09 16:48:27
+     * @desc 测试session拦截器
+     **/
+    @GetMapping(value = "/testSessionFilter")
+    public String testSessionFilter() {
+        ExtraFieldPropagation.set("sessionId", "dge");
+        return helloService.testSessionFilter();
     }
 }

@@ -1,5 +1,6 @@
 package com.github.dge1992.provider.controller;
 
+import brave.propagation.ExtraFieldPropagation;
 import com.github.dge1992.common.domain.User;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import lombok.extern.log4j.Log4j2;
@@ -51,5 +52,15 @@ public class TestController {
     @GetMapping("/testGetPojo")
     public Object testGetPojo(User user){
         return "调用成功！";
+    }
+
+    /**
+     * @author 董感恩
+     * @date 2020-02-09 16:43:40
+     * @desc 测试session拦截器
+     **/
+    @GetMapping("/testSessionFilter")
+    public Object testSessionFilter(){
+        return  "sessionId is "+ ExtraFieldPropagation.get("sessionId");
     }
 }
