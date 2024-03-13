@@ -1,0 +1,9 @@
+
+spring:
+  application:
+    name: settlement-center
+
+server:
+  port: 7002
+
+
