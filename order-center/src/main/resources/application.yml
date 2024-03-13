@@ -1,0 +1,9 @@
+
+spring:
+  application:
+    name: order-center
+
+server:
+  port: 7001
+
+
