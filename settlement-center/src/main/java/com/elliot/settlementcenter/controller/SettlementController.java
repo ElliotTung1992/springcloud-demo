@@ -1,6 +1,6 @@
 package com.elliot.settlementcenter.controller;
 
-import com.elliot.settlementcenter.model.FeeItemDTO;
+import com.elliot.elliotcommons.domian.external.FeeItemBO;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,14 +14,14 @@ import java.util.List;
 public class SettlementController {
 
     @RequestMapping("/queryByOrderId")
-    public List<FeeItemDTO> queryByOrderId(@RequestParam("orderId") String orderId){
-        List<FeeItemDTO> list = new ArrayList<>();
-        FeeItemDTO feeItemDTO = new FeeItemDTO();
-        feeItemDTO.setOrderId(orderId);
-        feeItemDTO.setFeeItemName("apple");
-        feeItemDTO.setPrice(new BigDecimal(1000));
-        feeItemDTO.setQuantity(new BigDecimal(1));
-        list.add(feeItemDTO);
+    public List<FeeItemBO> queryByOrderId(@RequestParam("orderId") String orderId){
+        List<FeeItemBO> list = new ArrayList<>();
+        FeeItemBO feeItemBO = new FeeItemBO();
+        feeItemBO.setOrderId(orderId);
+        feeItemBO.setFeeItemName("apple");
+        feeItemBO.setPrice(new BigDecimal(1000));
+        feeItemBO.setQuantity(new BigDecimal(1));
+        list.add(feeItemBO);
         return list;
     }
 }

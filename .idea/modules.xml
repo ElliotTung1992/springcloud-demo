@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elliot-commons/elliot-commons.iml" filepath="$PROJECT_DIR$/elliot-commons/elliot-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-center/eureka-center.iml" filepath="$PROJECT_DIR$/eureka-center/eureka-center.iml" />
       <module fileurl="file://$PROJECT_DIR$/feign-server/feign-server.iml" filepath="$PROJECT_DIR$/feign-server/feign-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/provider-server/provider-server.iml" filepath="$PROJECT_DIR$/provider-server/provider-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/provider/provider-server.iml" filepath="$PROJECT_DIR$/provider/provider-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-center/order-center.iml" filepath="$PROJECT_DIR$/order-center/order-center.iml" />
       <module fileurl="file://$PROJECT_DIR$/ribbon-server/ribbon-server.iml" filepath="$PROJECT_DIR$/ribbon-server/ribbon-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/settlement-center/settlement-center.iml" filepath="$PROJECT_DIR$/settlement-center/settlement-center.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-demo.iml" filepath="$PROJECT_DIR$/springcloud-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/zuul-server/zuul-server.iml" filepath="$PROJECT_DIR$/zuul-server/zuul-server.iml" />
     </modules>
   </component>
 </project>

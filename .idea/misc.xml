@@ -4,15 +4,35 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/provider/pom.xml" />
         <option value="$PROJECT_DIR$/ribbon-server/pom.xml" />
         <option value="$PROJECT_DIR$/feign-server/pom.xml" />
-        <option value="$PROJECT_DIR$/zuul-server/pom.xml" />
+        <option value="$PROJECT_DIR$/order-center/pom.xml" />
+        <option value="$PROJECT_DIR$/settlement-center/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-center/pom.xml" />
+        <option value="$PROJECT_DIR$/elliot-commons/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/client-server/pom.xml" />
+        <option value="$PROJECT_DIR$/common-api/pom.xml" />
+        <option value="$PROJECT_DIR$/common-server/pom.xml" />
+        <option value="$PROJECT_DIR$/config-client/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/consul-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/consul-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer-server/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka2-server/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway-server/pom.xml" />
+        <option value="$PROJECT_DIR$/provider-server/pom.xml" />
+        <option value="$PROJECT_DIR$/turbine-server/pom.xml" />
+        <option value="$PROJECT_DIR$/zipkin-server/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul-server/pom.xml" />
+      </set>
+    </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="jdk1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
