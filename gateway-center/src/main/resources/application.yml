@@ -1,0 +1,29 @@
+
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gateway-center
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: order_center_routh
+          uri: lb://ORDER-CENTER
+          predicates:
+            - Path=/order/**
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true

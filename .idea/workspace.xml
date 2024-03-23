@@ -5,162 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fc31492-b023-4df7-9033-edfa5cbcac3c" name="Default Changelist" comment="feature: 简单搭建">
-      <change afterPath="$PROJECT_DIR$/elliot-commons/src/main/java/com/elliot/elliotcommons/domian/external/FeeItemBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elliot-commons/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elliot-commons/src/test/java/com/elliot/elliotcommons/ElliotCommonsApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/external/SettlementService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-center/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-center/src/main/java/com/elliot/gatewaycenter/GatewayCenterApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-center/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-center/src/test/java/com/elliot/gatewaycenter/GatewayCenterApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-server/src/main/java/com/github/dge1992/client/ClientServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-server/src/main/java/com/github/dge1992/client/controller/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-server/src/main/java/com/github/dge1992/client/service/HelloService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-server/src/main/resources/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-server/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-server/src/test/java/com/github/dge1992/client/ClientServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-api/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-api/src/main/java/com/github/dge1992/common/CommonApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-api/src/main/java/com/github/dge1992/common/domain/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-server/src/main/java/com/github/dge1992/commonserver/CommonServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-server/src/main/java/com/github/dge1992/commonserver/common/security/DataSecurityAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-server/src/main/java/com/github/dge1992/commonserver/common/security/impl/Base64SecurityAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-server/src/main/java/com/github/dge1992/commonserver/intercepter/UserContextHolder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-server/src/main/java/com/github/dge1992/commonserver/intercepter/UserContextInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-server/src/main/java/com/github/dge1992/commonserver/jwt/JwtProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-server/src/main/java/com/github/dge1992/commonserver/jwt/JwtTokenHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-server/src/main/java/com/github/dge1992/commonserver/jwt/StringUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-server/src/test/java/com/github/dge1992/commonserver/CommonServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-server/src/test/java/com/github/dge1992/commonserver/JwtTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-client/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-client/src/main/java/com/github/dge1992/configclient/ConfigClientApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-client/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-client/src/test/java/com/github/dge1992/configclient/ConfigClientApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/java/com/github/dge1992/configserver/ConfigServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/test/java/com/github/dge1992/configserver/ConfigServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consul-consumer/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consul-consumer/src/main/java/com/github/dhe1992/consulconsumer/ConsulConsumerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consul-consumer/src/main/java/com/github/dhe1992/consulconsumer/controller/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consul-consumer/src/main/java/com/github/dhe1992/consulconsumer/service/TestService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consul-consumer/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consul-consumer/src/test/java/com/github/dhe1992/consulconsumer/ConsulConsumerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consul-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/elliot-commons/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consul-provider/src/main/java/com/github/dge1992/consulprovider/ConsulProviderApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consul-provider/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consul-provider/src/test/java/com/github/dge1992/consulprovider/ConsulProviderApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/main/java/com/github/dge1992/consumer/ConsumerServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/main/java/com/github/dge1992/consumer/config/ConsumerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/main/java/com/github/dge1992/consumer/config/FeignConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/main/java/com/github/dge1992/consumer/config/FeignOkHttpConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/main/java/com/github/dge1992/consumer/config/SwaggerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/main/java/com/github/dge1992/consumer/config/WebMvcConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/main/java/com/github/dge1992/consumer/controller/AuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/main/java/com/github/dge1992/consumer/controller/GatewayController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/main/java/com/github/dge1992/consumer/controller/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/main/java/com/github/dge1992/consumer/interceptor/FeignRequestInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/main/java/com/github/dge1992/consumer/interceptor/FeignTokenInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/main/java/com/github/dge1992/consumer/interceptor/SessionFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/main/java/com/github/dge1992/consumer/service/HelloService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/main/java/com/github/dge1992/consumer/service/HelloServiceHystrix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/main/resources/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-server/src/test/java/com/github/dge1992/consumer/ConsumerServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-center/src/main/java/com/elliot/eurekacenter/EurekaCenterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-center/src/main/java/com/elliot/eurekacenter/EurekaCenterApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/github/dge1992/eurekaserver/EurekaServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/github/dge1992/eurekaserver/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/test/java/com/github/dge1992/eurekaserver/EurekaServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka2-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka2-server/src/main/java/com/github/dge1992/eureka2server/Eureka2ServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka2-server/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka2-server/src/test/java/com/github/dge1992/eureka2server/Eureka2ServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feign-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feign-server/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feign-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feign-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feign-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feign-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/github/dge1992/gatewayserver/GatewayServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/github/dge1992/gatewayserver/config/GatewaySwaggerProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/github/dge1992/gatewayserver/config/LimiterConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/github/dge1992/gatewayserver/controller/HystrixController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/github/dge1992/gatewayserver/controller/RouteController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/github/dge1992/gatewayserver/filter/AuthFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/github/dge1992/gatewayserver/filter/ConsumeGatewayFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/github/dge1992/gatewayserver/filter/GatewayRateLimitFilterByIp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/github/dge1992/gatewayserver/filter/GwSwaggerHeaderFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/github/dge1992/gatewayserver/handler/SwaggerHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/github/dge1992/gatewayserver/model/GatewayFilterDefinition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/github/dge1992/gatewayserver/model/GatewayPredicateDefinition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/github/dge1992/gatewayserver/model/GatewayRouteDefinition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/github/dge1992/gatewayserver/service/impl/DynamicRouteServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/test/java/com/github/dge1992/gatewayserver/GatewayServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/OrderCenterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/OrderCenterApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-server/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-server/src/main/java/com/github/dge1992/provider/ProviderApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-server/src/main/java/com/github/dge1992/provider/controller/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-server/src/main/resources/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-server/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider-server/src/test/java/com/github/dge1992/provider/ProviderApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-server/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settlement-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/settlement-center/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settlement-center/src/main/java/com/elliot/settlementcenter/SettlementCenterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/settlement-center/src/main/java/com/elliot/settlementcenter/SettlementCenterApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settlement-center/src/main/java/com/elliot/settlementcenter/controller/SettlementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/settlement-center/src/main/java/com/elliot/settlementcenter/controller/SettlementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settlement-center/src/main/java/com/elliot/settlementcenter/model/FeeItemDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turbine-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turbine-server/src/main/java/com/github/dge1992/turbineserver/TurbineServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turbine-server/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/turbine-server/src/test/java/com/github/dge1992/turbineserver/TurbineServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zipkin-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zipkin-server/src/main/java/com/github/dge1992/zipkinserver/ZipkinServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zipkin-server/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zipkin-server/src/test/java/com/github/dge1992/zipkinserver/ZipkinServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/src/main/java/com/github/dge1992/zuulserver/ZuulServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/src/main/java/com/github/dge1992/zuulserver/filter/ErrorFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/src/main/java/com/github/dge1992/zuulserver/filter/FirstPreFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/src/main/java/com/github/dge1992/zuulserver/filter/PostFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/src/main/java/com/github/dge1992/zuulserver/filter/RoutingFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/src/main/java/com/github/dge1992/zuulserver/filter/SecondPreFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/src/main/resources/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/src/test/java/com/github/dge1992/zuulserver/ZuulServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settlement-center/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/settlement-center/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -351,7 +205,7 @@
       <recent name="com.example.commons.domain.settlement" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderCenterApplication">
+  <component name="RunManager" selected="Spring Boot.GatewayCenterApplication">
     <configuration name="OrderController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.elliot.orderserver.controller.OrderController" />
       <module name="order-server" />
@@ -476,6 +330,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GatewayCenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gateway-center" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.elliot.gatewaycenter.GatewayCenterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GatewayServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="gateway-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.dge1992.gatewayserver.GatewayServerApplication" />
@@ -551,6 +412,7 @@
       <item itemvalue="Spring Boot.CommonsApplication" />
       <item itemvalue="Spring Boot.ElliotCommonsApplication" />
       <item itemvalue="Spring Boot.EurekaCenterApplication" />
+      <item itemvalue="Spring Boot.GatewayCenterApplication" />
       <item itemvalue="Spring Boot.ClientServerApplication" />
       <item itemvalue="Spring Boot.CommonApplication" />
       <item itemvalue="Spring Boot.CommonServerApplication" />
@@ -597,7 +459,7 @@
       <workItem from="1707272770707" duration="18000" />
       <workItem from="1708954165083" duration="4160000" />
       <workItem from="1709771397348" duration="14840000" />
-      <workItem from="1710248918928" duration="15635000" />
+      <workItem from="1710248918928" duration="23002000" />
     </task>
     <task id="LOCAL-00001" summary="feature: 构建OrderCenter">
       <created>1710295836597</created>
@@ -620,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710367923338</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feature: 简单搭建">
+      <created>1711099873564</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711099873564</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">

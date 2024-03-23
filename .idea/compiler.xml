@@ -9,6 +9,7 @@
         <module name="settlement-center" />
         <module name="eureka-center" />
         <module name="order-center" />
+        <module name="gateway-center" />
         <module name="feign-server" />
         <module name="ribbon-server" />
         <module name="elliot-commons" />
@@ -30,6 +31,7 @@
       <module name="eureka-server" target="17" />
       <module name="eureka2-server" target="1.8" />
       <module name="feign-server" target="1.8" />
+      <module name="gateway-center" target="17" />
       <module name="gateway-server" target="1.8" />
       <module name="order-center" target="17" />
       <module name="order-server" target="17" />
@@ -57,6 +59,7 @@
       <module name="eureka-center" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="eureka2-server" options="-parameters" />
+      <module name="gateway-center" options="-parameters" />
       <module name="gateway-server" options="-parameters" />
       <module name="order-center" options="-parameters" />
       <module name="order-server" options="-parameters" />

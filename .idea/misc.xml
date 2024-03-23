@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/settlement-center/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-center/pom.xml" />
         <option value="$PROJECT_DIR$/elliot-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway-center/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
