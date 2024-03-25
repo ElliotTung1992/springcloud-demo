@@ -38,7 +38,7 @@
       <module name="provider-server" target="1.8" />
       <module name="ribbon-server" target="1.8" />
       <module name="settlement-center" target="17" />
-      <module name="springcloud-demo" target="1.8" />
+      <module name="springcloud-demo" target="1.5" />
       <module name="turbine-server" target="1.8" />
       <module name="zipkin-server" target="1.8" />
       <module name="zuul-server" target="1.8" />

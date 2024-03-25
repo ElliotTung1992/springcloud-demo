@@ -3,6 +3,16 @@
 server:
   port: 8080
 
+# 断言工厂 org.springframework.cloud.gateway.handler.predicate包路径下的类
+
+# 过滤器种类:
+# 1. 路由过滤器 org.springframework.cloud.gateway.filter.factory.StripPrefixGatewayFilterFactory
+# 2. 默认过滤器
+# 3. 全局过滤器 - 自定义过滤器
+# 过滤器排序规则：
+# 1. 全局过滤器可以实现Ordered接口并且指定Order值, 值越小顺序越优先
+# 2. 当3中类型的过滤器Order值相同时,默认过滤器 > 路由过滤器 > 全局过滤器
+
 spring:
   application:
     name: gateway-center
@@ -12,10 +22,15 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: order_center_routh
-          uri: lb://ORDER-CENTER
+        - id: order_center_routh # 路由标识
+          uri: lb://ORDER-CENTER # 路由目标地址 lb: 表示负载均衡 ORDER-CENTER: 表示服务名称
           predicates:
-            - Path=/order/**
+            - Path=/order/** # 路径断言
+          filters:
+            - AddRequestHeader=company,Elliot # 路由过滤器: 增加请求头信息
+      default-filters:
+        - AddRequestHeader=message,Happy every day # 默认过滤器: 增加请求头信息
+
 
 
 eureka:
