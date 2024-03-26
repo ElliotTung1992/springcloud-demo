@@ -4,17 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fc31492-b023-4df7-9033-edfa5cbcac3c" name="Default Changelist" comment="feature: 简单搭建">
-      <change afterPath="$PROJECT_DIR$/gateway-center/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-center/src/main/java/com/elliot/gatewaycenter/GatewayCenterApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-center/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-center/src/test/java/com/elliot/gatewaycenter/GatewayCenterApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="7fc31492-b023-4df7-9033-edfa5cbcac3c" name="Default Changelist" comment="feature: update about gateway">
+      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/external/fallback/SettlementFallbackService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settlement-center/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/settlement-center/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/OrderCenterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/OrderCenterApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/external/SettlementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/external/SettlementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-center/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settlement-center/src/main/java/com/elliot/settlementcenter/controller/SettlementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/settlement-center/src/main/java/com/elliot/settlementcenter/controller/SettlementController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,13 +210,26 @@
       <recent name="com.example.commons.domain.settlement" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayCenterApplication">
+  <component name="RunManager" selected="Application.com.elliot.ordercenter.controller.OrderController">
     <configuration name="OrderController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.elliot.orderserver.controller.OrderController" />
       <module name="order-server" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.elliot.orderserver.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.elliot.ordercenter.controller.OrderController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.elliot.ordercenter.controller.OrderController" />
+      <module name="order-center" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.elliot.ordercenter.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -408,6 +426,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.com.elliot.ordercenter.controller.OrderController" />
       <item itemvalue="Application.OrderController" />
       <item itemvalue="Spring Boot.CommonsApplication" />
       <item itemvalue="Spring Boot.ElliotCommonsApplication" />
@@ -437,6 +456,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.elliot.ordercenter.controller.OrderController" />
         <item itemvalue="Application.OrderController" />
       </list>
     </recent_temporary>
@@ -459,7 +479,7 @@
       <workItem from="1707272770707" duration="18000" />
       <workItem from="1708954165083" duration="4160000" />
       <workItem from="1709771397348" duration="14840000" />
-      <workItem from="1710248918928" duration="23002000" />
+      <workItem from="1710248918928" duration="42543000" />
     </task>
     <task id="LOCAL-00001" summary="feature: 构建OrderCenter">
       <created>1710295836597</created>
@@ -489,7 +509,21 @@
       <option name="project" value="LOCAL" />
       <updated>1711099873564</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feature: 基本搭建">
+      <created>1711173892290</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711173892291</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feature: update about gateway">
+      <created>1711358060646</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711358060646</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -574,6 +608,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="90d3225e-583e-40e5-bfc7-33bfaa6a8686">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -581,12 +640,19 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="90d3225e-583e-40e5-bfc7-33bfaa6a8686" value="TOOL_WINDOW" />
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feature: 构建OrderCenter" />
     <MESSAGE value="feature: 构建SettlementCenter" />
     <MESSAGE value="feature: 简单搭建" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: 简单搭建" />
+    <MESSAGE value="feature: 基本搭建" />
+    <MESSAGE value="feature: update about gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: update about gateway" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/provider/src/main/java/com/github/dge1992/provider/ProviderApplication.java" />

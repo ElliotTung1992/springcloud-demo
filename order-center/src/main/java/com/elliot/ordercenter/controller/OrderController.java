@@ -1,19 +1,14 @@
 package com.elliot.ordercenter.controller;
 
-import cn.hutool.json.JSONUtil;
-import com.elliot.elliotcommons.domian.external.FeeItemBO;
 import com.elliot.ordercenter.model.Order;
-import com.elliot.ordercenter.service.external.SettlementService;
+import com.elliot.ordercenter.service.OrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 @Slf4j
 @RequestMapping("/order")
@@ -21,24 +16,19 @@ import java.util.UUID;
 public class OrderController {
 
     @Autowired
-    private SettlementService settlementService;
+    private OrderService orderService;
 
     @RequestMapping("/getOrderList")
     public List<Order> getOrderListById(@RequestHeader(value = "company", required = false)String company){
-
         log.info("getOrderListById:company:{}", company);
-
-        List<Order> list = new ArrayList<>();
-        Order order = new Order();
-        order.setId(UUID.randomUUID().toString().replace("-", ""));
-        order.setOrderName("Apple");
-        order.setPrice(new BigDecimal(2200));
-        list.add(order);
-
-        List<FeeItemBO> feeItemBOS = settlementService.queryByOrderId("11");
-        System.out.println(JSONUtil.toJsonStr(feeItemBOS));
-
+        List<Order> list = orderService.getOrderListById();
         return list;
+    }
+
+    @RequestMapping("/getOrderListTimeOut")
+    public List<Order> getOrderListTimeOut() throws InterruptedException {
+        orderService.getOrderListTimeOut();
+        return null;
     }
 
 }

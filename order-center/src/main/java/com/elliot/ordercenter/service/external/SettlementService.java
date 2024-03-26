@@ -1,13 +1,14 @@
 package com.elliot.ordercenter.service.external;
 
 import com.elliot.elliotcommons.domian.external.FeeItemBO;
+import com.elliot.ordercenter.service.external.fallback.SettlementFallbackService;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@FeignClient(value = "settlement-center")
+@FeignClient(value = "settlement-center", fallback = SettlementFallbackService.class)
 public interface SettlementService {
 
     /**
@@ -17,4 +18,12 @@ public interface SettlementService {
      */
     @GetMapping("/settlement/queryByOrderId")
     List<FeeItemBO> queryByOrderId(@RequestParam("orderId") String orderId);
+
+    /**
+     * 测试异常 - 超时
+     * @param orderId orderId
+     * @return List<FeeItemBO>
+     */
+    @GetMapping("/settlement/queryTimeOutByOrderId")
+    List<FeeItemBO> queryTimeOutByOrderId(@RequestParam("orderId") String orderId);
 }

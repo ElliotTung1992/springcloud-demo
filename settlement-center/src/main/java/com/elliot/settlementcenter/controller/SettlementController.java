@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 @RequestMapping("/settlement")
 @RestController
@@ -15,6 +16,19 @@ public class SettlementController {
 
     @RequestMapping("/queryByOrderId")
     public List<FeeItemBO> queryByOrderId(@RequestParam("orderId") String orderId){
+        List<FeeItemBO> list = new ArrayList<>();
+        FeeItemBO feeItemBO = new FeeItemBO();
+        feeItemBO.setOrderId(orderId);
+        feeItemBO.setFeeItemName("apple");
+        feeItemBO.setPrice(new BigDecimal(1000));
+        feeItemBO.setQuantity(new BigDecimal(1));
+        list.add(feeItemBO);
+        return list;
+    }
+
+    @RequestMapping("/queryTimeOutByOrderId")
+    public List<FeeItemBO> queryTimeOutByOrderId(@RequestParam("orderId") String orderId) throws InterruptedException {
+        TimeUnit.SECONDS.sleep(2);
         List<FeeItemBO> list = new ArrayList<>();
         FeeItemBO feeItemBO = new FeeItemBO();
         feeItemBO.setOrderId(orderId);

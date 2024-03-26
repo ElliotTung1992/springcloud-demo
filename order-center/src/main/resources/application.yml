@@ -6,6 +6,12 @@ spring:
 server:
   port: 7001
 
+# hystrix: 服务降级 服务熔断 服务限流
+
+feign:
+  hystrix:
+    enabled: true
+
 eureka:
   client:
     register-with-eureka: true
