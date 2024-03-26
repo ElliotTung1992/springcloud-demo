@@ -1,6 +1,8 @@
 package com.elliot.settlementcenter.controller;
 
 import com.elliot.elliotcommons.domian.external.FeeItemBO;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,15 +29,12 @@ public class SettlementController {
     }
 
     @RequestMapping("/queryTimeOutByOrderId")
-    public List<FeeItemBO> queryTimeOutByOrderId(@RequestParam("orderId") String orderId) throws InterruptedException {
-        TimeUnit.SECONDS.sleep(2);
-        List<FeeItemBO> list = new ArrayList<>();
-        FeeItemBO feeItemBO = new FeeItemBO();
-        feeItemBO.setOrderId(orderId);
-        feeItemBO.setFeeItemName("apple");
-        feeItemBO.setPrice(new BigDecimal(1000));
-        feeItemBO.setQuantity(new BigDecimal(1));
-        list.add(feeItemBO);
-        return list;
+    public String queryTimeOutByOrderId(@RequestParam("orderId") String orderId) throws InterruptedException {
+        TimeUnit.SECONDS.sleep(5);
+        return "haha";
+    }
+
+    public String queryTimeOut() {
+        return "hehe";
     }
 }

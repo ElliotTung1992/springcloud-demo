@@ -38,8 +38,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public void getOrderListTimeOut() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(2);
-        settlementService.queryTimeOutByOrderId("123");
+    public String getOrderListTimeOut() throws InterruptedException {
+        return settlementService.queryTimeOutByOrderId("123");
     }
 }

@@ -4,21 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fc31492-b023-4df7-9033-edfa5cbcac3c" name="Default Changelist" comment="feature: update about gateway">
-      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/external/fallback/SettlementFallbackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
+    <list default="true" id="7fc31492-b023-4df7-9033-edfa5cbcac3c" name="Default Changelist" comment="feature: update about hystrix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/OrderCenterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/OrderCenterApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/controller/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/external/SettlementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/external/SettlementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-center/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/external/fallback/SettlementFallbackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/external/fallback/SettlementFallbackService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settlement-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/settlement-center/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settlement-center/src/main/java/com/elliot/settlementcenter/SettlementCenterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/settlement-center/src/main/java/com/elliot/settlementcenter/SettlementCenterApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settlement-center/src/main/java/com/elliot/settlementcenter/controller/SettlementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/settlement-center/src/main/java/com/elliot/settlementcenter/controller/SettlementController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -479,7 +473,7 @@
       <workItem from="1707272770707" duration="18000" />
       <workItem from="1708954165083" duration="4160000" />
       <workItem from="1709771397348" duration="14840000" />
-      <workItem from="1710248918928" duration="42543000" />
+      <workItem from="1710248918928" duration="44985000" />
     </task>
     <task id="LOCAL-00001" summary="feature: 构建OrderCenter">
       <created>1710295836597</created>
@@ -523,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711358060646</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feature: update about hystrix">
+      <created>1711430606543</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711430606544</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -652,7 +653,8 @@
     <MESSAGE value="feature: 简单搭建" />
     <MESSAGE value="feature: 基本搭建" />
     <MESSAGE value="feature: update about gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: update about gateway" />
+    <MESSAGE value="feature: update about hystrix" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: update about hystrix" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/provider/src/main/java/com/github/dge1992/provider/ProviderApplication.java" />

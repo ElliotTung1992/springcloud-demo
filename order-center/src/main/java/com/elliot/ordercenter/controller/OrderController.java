@@ -26,9 +26,8 @@ public class OrderController {
     }
 
     @RequestMapping("/getOrderListTimeOut")
-    public List<Order> getOrderListTimeOut() throws InterruptedException {
-        orderService.getOrderListTimeOut();
-        return null;
+    public String getOrderListTimeOut() throws InterruptedException {
+        return orderService.getOrderListTimeOut();
     }
 
 }

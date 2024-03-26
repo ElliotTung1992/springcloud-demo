@@ -15,6 +15,6 @@ public interface OrderService {
     /**
      * 获取订单列表超时查询
      */
-    void getOrderListTimeOut() throws InterruptedException;
+    String getOrderListTimeOut() throws InterruptedException;
 
 }

@@ -12,7 +12,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients(basePackages = "com.elliot.ordercenter.service.external")
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableHystrix
 public class OrderCenterApplication {
 
     public static void main(String[] args) {

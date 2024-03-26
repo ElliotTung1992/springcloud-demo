@@ -18,7 +18,7 @@ public class SettlementFallbackService implements SettlementService {
     }
 
     @Override
-    public List<FeeItemBO> queryTimeOutByOrderId(String orderId) {
+    public String queryTimeOutByOrderId(String orderId) {
         log.error("查询SettlementService:queryTimeOutByOrderId请求超时了");
         return null;
     }

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@FeignClient(value = "settlement-center", fallback = SettlementFallbackService.class)
+@FeignClient(value = "settlement-center")
 public interface SettlementService {
 
     /**
@@ -25,5 +25,5 @@ public interface SettlementService {
      * @return List<FeeItemBO>
      */
     @GetMapping("/settlement/queryTimeOutByOrderId")
-    List<FeeItemBO> queryTimeOutByOrderId(@RequestParam("orderId") String orderId);
+    String queryTimeOutByOrderId(@RequestParam("orderId") String orderId);
 }
