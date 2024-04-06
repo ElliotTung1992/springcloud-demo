@@ -37,6 +37,8 @@
     </build>
 
     <modules>
+        <module>eureka-center</module>
+        <module>gateway-center</module>
     </modules>
 
 </project>
