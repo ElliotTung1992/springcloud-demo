@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7fc31492-b023-4df7-9033-edfa5cbcac3c" name="Default Changelist" comment="feature: update about hystrix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/external/SettlementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/external/SettlementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/external/fallback/SettlementFallbackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/external/fallback/SettlementFallbackService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/src/main/java/com/elliot/ordercenter/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settlement-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/settlement-center/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settlement-center/src/main/java/com/elliot/settlementcenter/SettlementCenterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/settlement-center/src/main/java/com/elliot/settlementcenter/SettlementCenterApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settlement-center/src/main/java/com/elliot/settlementcenter/controller/SettlementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/settlement-center/src/main/java/com/elliot/settlementcenter/controller/SettlementController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +187,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "93dadf718130056db8f67a934344065f"
+    "spring.configuration.checksum": "8c7fe2732f75908180226ff485601aa3"
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -474,6 +468,7 @@
       <workItem from="1708954165083" duration="4160000" />
       <workItem from="1709771397348" duration="14840000" />
       <workItem from="1710248918928" duration="44985000" />
+      <workItem from="1712318078841" duration="1348000" />
     </task>
     <task id="LOCAL-00001" summary="feature: 构建OrderCenter">
       <created>1710295836597</created>
