@@ -31,8 +31,8 @@ public class OrderServiceImpl implements OrderService {
         order.setPrice(new BigDecimal(2200));
         list.add(order);
 
-        List<FeeItemBO> feeItemBOS = settlementService.queryByOrderId("11");
-        System.out.println(JSONUtil.toJsonStr(feeItemBOS));
+        //List<FeeItemBO> feeItemBOS = settlementService.queryByOrderId("11");
+        //System.out.println(JSONUtil.toJsonStr(feeItemBOS));
 
         return list;
     }

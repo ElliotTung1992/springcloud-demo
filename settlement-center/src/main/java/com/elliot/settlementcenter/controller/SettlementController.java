@@ -1,9 +1,8 @@
 package com.elliot.settlementcenter.controller;
 
 import com.elliot.elliotcommons.domian.external.FeeItemBO;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import com.elliot.elliotcommons.domian.external.SettlementBO;
+import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -14,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 @RestController
 public class SettlementController {
 
-    @RequestMapping("/queryByOrderId")
+    @GetMapping("/queryByOrderId")
     public List<FeeItemBO> queryByOrderId(@RequestParam("orderId") String orderId){
         List<FeeItemBO> list = new ArrayList<>();
         FeeItemBO feeItemBO = new FeeItemBO();
@@ -26,9 +25,14 @@ public class SettlementController {
         return list;
     }
 
-    @RequestMapping("/queryTimeOutByOrderId")
+    @GetMapping("/queryTimeOutByOrderId")
     public String queryTimeOutByOrderId(@RequestParam("orderId") String orderId) throws InterruptedException {
         TimeUnit.SECONDS.sleep(5);
         return "haha";
+    }
+
+    @PostMapping("/insertSettlement")
+    public void insertSettlement(@RequestBody SettlementBO settlementBO){
+        System.out.println(settlementBO);
     }
 }
