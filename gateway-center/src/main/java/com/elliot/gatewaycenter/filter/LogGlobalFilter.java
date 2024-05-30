@@ -28,7 +28,7 @@ public class LogGlobalFilter implements GlobalFilter, Ordered {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         // 获取请求信息
-        ServerHttpRequest request = exchange.getRequest();
+        /*ServerHttpRequest request = exchange.getRequest();
         URI uri = request.getURI();
         HttpMethod method = request.getMethod();
         HttpHeaders headers = request.getHeaders();
@@ -38,7 +38,7 @@ public class LogGlobalFilter implements GlobalFilter, Ordered {
 
         for (Map.Entry<String, List<String>> entry : headers.entrySet()) {
             log.info("LogGlobalFilter - headers: {} {}", entry.getKey(), entry.getValue());
-        }
+        }*/
 
         // 放行请求
         return chain.filter(exchange);

@@ -30,21 +30,18 @@ spring:
           uri: lb://ORDER-CENTER
           predicates:
             - Path=/order/**
-          filters:
-            - AddRequestHeader=company,Elliot # 路由过滤器: 增加请求头信息
+#          filters:
+#            - AddRequestHeader=company,Elliot # 路由过滤器: 增加请求头信息
       default-filters:
-        - AddRequestHeader=message,Happy every day
+#        - AddRequestHeader=message,Happy every day
         - name: RequestRateLimiter
           args:
-            # 如果keyResolver返回空key，则拒绝该请求403，默认true表示拒绝，false则表示允许访问
-            deny-empty-key: false
-            # 令牌桶算法每秒补充的token数量（每秒的请求数量）spring-boot-starter-data-redis-reactive
+            # 令牌桶算法每秒补充的token数量（每秒的请求数量）
             redis-rate-limiter.replenishRate: 1
             # 令牌桶算法token最大数量（每秒的最大请求数量）
             redis-rate-limiter.burstCapacity: 1
             # 单次请求消费的token数量
             redis-rate-limiter.requestedTokens: 1
-            # 自定义的KeyResolver（从请求exchange解析id，用于区分限流的独立单元，如用户ID、remoteAddr、sessionId等）
             key-resolver: "#{@ipKeyResolver}"
 
 
