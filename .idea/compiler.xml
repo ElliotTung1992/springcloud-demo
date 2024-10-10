@@ -8,9 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="settlement-center" />
         <module name="eureka-center" />
-        <module name="order-center" />
         <module name="gateway-center" />
         <module name="feign-server" />
+        <module name="XA" />
+        <module name="order-center" />
         <module name="ribbon-server" />
         <module name="elliot-commons" />
       </profile>
@@ -40,12 +41,14 @@
       <module name="settlement-center" target="17" />
       <module name="springcloud-demo" target="1.5" />
       <module name="turbine-server" target="1.8" />
+      <module name="XA" target="17" />
       <module name="zipkin-server" target="1.8" />
       <module name="zuul-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="XA" options="-parameters" />
       <module name="client-server" options="-parameters" />
       <module name="common-api" options="-parameters" />
       <module name="common-server" options="-parameters" />

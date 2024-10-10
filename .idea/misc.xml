@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/eureka-center/pom.xml" />
         <option value="$PROJECT_DIR$/elliot-commons/pom.xml" />
         <option value="$PROJECT_DIR$/gateway-center/pom.xml" />
+        <option value="$PROJECT_DIR$/XA/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

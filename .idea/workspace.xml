@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fc31492-b023-4df7-9033-edfa5cbcac3c" name="Default Changelist" comment="feature: 修改主配置文件">
+    <list default="true" id="7fc31492-b023-4df7-9033-edfa5cbcac3c" name="Default Changelist" comment="feature: 网关实现限流">
+      <change afterPath="$PROJECT_DIR$/XA/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XA/src/main/java/com/github/elliot/xa/XaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XA/src/main/java/com/github/elliot/xa/demo/XADemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XA/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XA/src/test/java/com/github/elliot/xa/XaApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-center/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-center/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,25 +179,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/Users/ganendong/Documents/workspace/springcloud-demo",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "8c7fe2732f75908180226ff485601aa3"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ganendong/Documents/workspace/springcloud-demo&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;32796bfd5f30f9ac3d0709923934cf2b&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -200,13 +206,26 @@
       <recent name="com.example.commons.domain.settlement" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.elliot.ordercenter.controller.OrderController">
+  <component name="RunManager" selected="Application.XADemo">
     <configuration name="OrderController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.elliot.orderserver.controller.OrderController" />
       <module name="order-server" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.elliot.orderserver.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XADemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.elliot.xa.demo.XADemo" />
+      <module name="XA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.elliot.xa.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -401,6 +420,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="XaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="XA" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.elliot.xa.XaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ZipkinServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="zipkin-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.dge1992.zipkinserver.ZipkinServerApplication" />
@@ -416,8 +442,10 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.XADemo" />
       <item itemvalue="Application.com.elliot.ordercenter.controller.OrderController" />
       <item itemvalue="Application.OrderController" />
+      <item itemvalue="Spring Boot.XaApplication" />
       <item itemvalue="Spring Boot.CommonsApplication" />
       <item itemvalue="Spring Boot.ElliotCommonsApplication" />
       <item itemvalue="Spring Boot.EurekaCenterApplication" />
@@ -446,6 +474,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.XADemo" />
         <item itemvalue="Application.com.elliot.ordercenter.controller.OrderController" />
         <item itemvalue="Application.OrderController" />
       </list>
@@ -470,7 +499,14 @@
       <workItem from="1708954165083" duration="4160000" />
       <workItem from="1709771397348" duration="14840000" />
       <workItem from="1710248918928" duration="44985000" />
-      <workItem from="1712318078841" duration="3065000" />
+      <workItem from="1712318078841" duration="12973000" />
+      <workItem from="1714288568073" duration="3778000" />
+      <workItem from="1715257923340" duration="284000" />
+      <workItem from="1716886865801" duration="31793000" />
+      <workItem from="1722306316946" duration="197000" />
+      <workItem from="1722325940605" duration="2748000" />
+      <workItem from="1727258498953" duration="5624000" />
+      <workItem from="1728559250085" duration="5925000" />
     </task>
     <task id="LOCAL-00001" summary="feature: 构建OrderCenter">
       <created>1710295836597</created>
@@ -528,7 +564,28 @@
       <option name="project" value="LOCAL" />
       <updated>1712393277509</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feature: 多模块管理">
+      <created>1712404995695</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712404995695</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feature: 增加限流处理">
+      <created>1716951050154</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716951050155</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feature: 网关实现限流">
+      <created>1717059922371</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717059922372</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -670,7 +727,21 @@
     <MESSAGE value="feature: update about gateway" />
     <MESSAGE value="feature: update about hystrix" />
     <MESSAGE value="feature: 修改主配置文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: 修改主配置文件" />
+    <MESSAGE value="feature: 多模块管理" />
+    <MESSAGE value="feature: 增加限流处理" />
+    <MESSAGE value="feature: 网关实现限流" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: 网关实现限流" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/XA/src/main/java/com/github/elliot/xa/demo/XADemo.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/provider/src/main/java/com/github/dge1992/provider/ProviderApplication.java" />
