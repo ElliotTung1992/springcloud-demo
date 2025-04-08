@@ -11,66 +11,34 @@
         <module name="gateway-center" />
         <module name="feign-server" />
         <module name="XA" />
+        <module name="apollo-demo" />
         <module name="order-center" />
         <module name="ribbon-server" />
         <module name="elliot-commons" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="client-server" target="1.8" />
-      <module name="common" target="1.8" />
-      <module name="common-api" target="1.8" />
-      <module name="common-server" target="1.8" />
-      <module name="commons" target="17" />
-      <module name="config-client" target="1.8" />
-      <module name="config-server" target="1.8" />
-      <module name="consul-consumer" target="1.8" />
-      <module name="consul-provider" target="1.8" />
-      <module name="consumer-server" target="1.8" />
-      <module name="elliot-commons" target="17" />
-      <module name="eureka-center" target="17" />
-      <module name="eureka-server" target="17" />
-      <module name="eureka2-server" target="1.8" />
+      <module name="apollo-demo" target="17" />
+      <module name="elliot-commons" target="1.8" />
+      <module name="eureka-center" target="1.8" />
       <module name="feign-server" target="1.8" />
-      <module name="gateway-center" target="17" />
-      <module name="gateway-server" target="1.8" />
-      <module name="order-center" target="17" />
-      <module name="order-server" target="17" />
-      <module name="provider-server" target="1.8" />
+      <module name="gateway-center" target="1.8" />
+      <module name="order-center" target="1.8" />
       <module name="ribbon-server" target="1.8" />
-      <module name="settlement-center" target="17" />
+      <module name="settlement-center" target="1.8" />
       <module name="springcloud-demo" target="1.5" />
-      <module name="turbine-server" target="1.8" />
       <module name="XA" target="17" />
-      <module name="zipkin-server" target="1.8" />
-      <module name="zuul-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="XA" options="-parameters" />
-      <module name="client-server" options="-parameters" />
-      <module name="common-api" options="-parameters" />
-      <module name="common-server" options="-parameters" />
-      <module name="commons" options="-parameters" />
-      <module name="config-client" options="-parameters" />
-      <module name="config-server" options="-parameters" />
-      <module name="consul-consumer" options="-parameters" />
-      <module name="consul-provider" options="-parameters" />
-      <module name="consumer-server" options="-parameters" />
+      <module name="apollo-demo" options="-parameters" />
       <module name="elliot-commons" options="-parameters" />
       <module name="eureka-center" options="-parameters" />
-      <module name="eureka-server" options="-parameters" />
-      <module name="eureka2-server" options="-parameters" />
       <module name="gateway-center" options="-parameters" />
-      <module name="gateway-server" options="-parameters" />
       <module name="order-center" options="-parameters" />
-      <module name="order-server" options="-parameters" />
-      <module name="provider-server" options="-parameters" />
       <module name="settlement-center" options="-parameters" />
-      <module name="turbine-server" options="-parameters" />
-      <module name="zipkin-server" options="-parameters" />
-      <module name="zuul-server" options="-parameters" />
     </option>
   </component>
 </project>

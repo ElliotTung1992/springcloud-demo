@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/XA/XA.iml" filepath="$PROJECT_DIR$/XA/XA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apollo-demo/apollo-demo.iml" filepath="$PROJECT_DIR$/apollo-demo/apollo-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/elliot-commons/elliot-commons.iml" filepath="$PROJECT_DIR$/elliot-commons/elliot-commons.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-center/eureka-center.iml" filepath="$PROJECT_DIR$/eureka-center/eureka-center.iml" />
       <module fileurl="file://$PROJECT_DIR$/feign-server/feign-server.iml" filepath="$PROJECT_DIR$/feign-server/feign-server.iml" />

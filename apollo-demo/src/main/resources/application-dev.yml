@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: apollo-demo
+
+server:
+  port: 7070
+
+app:
+  id: apollo-demo
+apollo:
+  meta: http://localhost:8080
+  bootstrap:
+    enabled: true
+    namespaces: application.properties
