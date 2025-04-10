@@ -4,27 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fc31492-b023-4df7-9033-edfa5cbcac3c" name="Default Changelist" comment="feature: mysql XA协议分布式事务实现">
-      <change afterPath="$PROJECT_DIR$/apollo-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apollo-demo/src/main/java/com/github/elliot/apollodemo/ApolloDemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apollo-demo/src/main/java/com/github/elliot/apollodemo/configuration/EventReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apollo-demo/src/main/java/com/github/elliot/apollodemo/controller/ApolloCompanyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apollo-demo/src/main/java/com/github/elliot/apollodemo/controller/ApolloDemoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apollo-demo/src/main/java/com/github/elliot/apollodemo/doamin/CarConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apollo-demo/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apollo-demo/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apollo-demo/src/test/java/com/github/elliot/apollodemo/ApolloDemoApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="7fc31492-b023-4df7-9033-edfa5cbcac3c" name="Default Changelist" comment="feature: mysql XA协议分布式事务实现 和 apollo 相关的案例">
+      <change afterPath="$PROJECT_DIR$/apollo-demo/src/main/java/com/github/elliot/apollodemo/controller/LongPollingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XA/src/main/java/com/github/elliot/xa/demo/XADemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/XA/src/main/java/com/github/elliot/xa/demo/XADemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elliot-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/elliot-commons/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-center/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-center/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settlement-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/settlement-center/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -536,7 +518,7 @@
       <workItem from="1738997325019" duration="27000" />
       <workItem from="1740484188138" duration="6044000" />
       <workItem from="1743671199226" duration="795000" />
-      <workItem from="1744012829028" duration="16358000" />
+      <workItem from="1744012829028" duration="21091000" />
     </task>
     <task id="LOCAL-00001" summary="feature: 构建OrderCenter">
       <created>1710295836597</created>
@@ -622,7 +604,14 @@
       <option name="project" value="LOCAL" />
       <updated>1728567727574</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feature: mysql XA协议分布式事务实现 和 apollo 相关的案例">
+      <created>1744113305991</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1744113305991</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -768,7 +757,8 @@
     <MESSAGE value="feature: 增加限流处理" />
     <MESSAGE value="feature: 网关实现限流" />
     <MESSAGE value="feature: mysql XA协议分布式事务实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: mysql XA协议分布式事务实现" />
+    <MESSAGE value="feature: mysql XA协议分布式事务实现 和 apollo 相关的案例" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: mysql XA协议分布式事务实现 和 apollo 相关的案例" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/provider/src/main/java/com/github/dge1992/provider/ProviderApplication.java" />
